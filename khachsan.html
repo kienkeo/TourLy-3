@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Khách Sạn</title>
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- custom css link -->
+   <link rel="stylesheet" href="/Bài code linh tinh/THỰC TẬP (1)/css/khachsan.css">
+   <link rel="stylesheet" href="/exercises/css/fontawesome.css" media="all">
+</head>
+<body>
+
+   <!-- header -->
+
+   <header class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i> Khách Sạn</a>
+
+      <nav class="navbar">
+         <a href="#home">Trang chủ</a>
+         <a href="#about">Về chúng tôi</a>
+         <a href="#room">Khách Sạn Nổi Tiếng</a>
+         <a href="#gallery">Phòng Trưng Bày</a>
+         <a href="#review">Bình Luận</a>
+         <a href="#faq">Những Câu Hỏi</a>
+         <a href="#reservation" class="btn">ĐẶT NGAY</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </header>
+
+   <!-- end -->
+
+   <!-- home -->
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/n1.jpg) no-repeat;">
+               <div class="content">
+                  <h3>TOP 10 KHÁCH SẠN HÀNG ĐẦU ĐÀ LẠT</h3>
+                  <a href="#" class="btn">Khách sạn là các chỗ nghỉ cho các du khách đến Đà Lạt.</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/n2.jpg) no-repeat;">
+               <div class="content">
+                  <h3>TOP 10 KHÁCH SẠN HÀNG ĐẦU ĐÀ LẠT</h3>
+                  <a href="#" class="btn">Khách sạn là các chỗ nghỉ cho các du khách đến Đà Lạt.</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/n3.jpg) no-repeat;">
+               <div class="content">
+                  <h3>TOP 10 KHÁCH SẠN HÀNG ĐẦU ĐÀ LẠT</h3>
+                  <a href="#" class="btn">Khách sạn là các chỗ nghỉ cho các du khách đến Đà Lạt.</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/n4.jpg) no-repeat;">
+               <div class="content">
+                  <h3>TOP 10 KHÁCH SẠN HÀNG ĐẦU ĐÀ LẠT</h3>
+                  <a href="#" class="btn">Khách sạn là các chỗ nghỉ cho các du khách đến Đà Lạt.</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- availability -->
+
+   <section class="availability">
+
+      <form action="">
+
+         <div class="box">
+            <p>Ngày Đặt Phòng<span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>Ngày trả phòng <span>*</span></p>
+            <input type="date" class="input">
+         </div>
+
+         <div class="box">
+            <p>Người lớn <span>*</span></p>
+            <select name="adults" id="" class="input">
+               <option value="1">1 người lớn</option>
+               <option value="2">2 người lớn</option>
+               <option value="3">3 người lớn</option>
+               <option value="4">4 người lớn</option>
+               <option value="5">5 người lớn</option>
+               <option value="6">6 người lớn</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>Trẻ em <span>*</span></p>
+            <select name="child" id="" class="input">
+               <option value="1">1 trẻ em</option>
+               <option value="2">2 trẻ em</option>
+               <option value="3">3 trẻ em</option>
+               <option value="4">4 trẻ em</option>
+               <option value="5">5 trẻ em</option>
+               <option value="6">6 trẻ em</option>
+            </select>
+         </div>
+
+         <div class="box">
+            <p>Phòng<span>*</span></p>
+            <select name="rooms" id="" class="input">
+               <option value="1">1 phòng</option>
+               <option value="2">2 phòng</option>
+               <option value="3">3 phòng</option>
+               <option value="4">4 phòng</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 phòng</option>
+            </select>
+         </div>
+
+         <input type="submit" value="ĐẶT PHÒNG" class="btn">
+
+      </form>
+
+   </section>
+
+   <!-- end -->
+
+
+   <!-- about -->
+
+   <section class="about" id="about">
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/về chúng tôi 1.jpg" alt="">
+         </div>
+
+         <div class="content">
+            <h3>Về Chúng Tôi</h3>
+            <p>Nếu như các bạn muốn tìm cho mình một khách sạn náo nhiệt đông người. Thì hãy chọn cho mình một khách sạn ở gần chợ nhé. 
+               Thì các bạn sẽ tiện đi lại hơn có thể đi bộ vòng quanh chợ Đà Lạt, Hồ Xuân Hương,...
+               Tại Đà Lạt chỉ có 6 khách sạn Đà Lạt 5 sao mà bạn có thể tham khảo. Như:  LaDalat Hotel, Dalat Palace Hotel, Ana Mandara Villas Dalat. 
+               Dalat Edensee Lake Resort, Swiss-Belresort Tuyền Lâm, Bình An Village.</p>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- room -->
+
+   <section class="room" id="room">
+
+      <h1 class="heading">Khách Sạn Nổi Tiếng</h1>
+
+      <div class="swiper room-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">3.000.000/Đêm</span>
+                  <img src="images/Phòng 1.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Dalat Palace Hotel </h3>
+                  <p>Dalat Palace Hotel là sự lựa chọn tốt nhất cho các bạn.
+                     Hãy ghé Dalat Palace nhé!
+                  </p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">4.000.000/Đêm</span>
+                  <img src="images/phòng 2.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>LaDaLat</h3>
+                  <p>Khi đến với Ladalat thì các bạn dễ dàng đến và tham quan Thung Lũng Tình Yêu Đà Lạt.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">6.500.000/Đêm</span>
+                  <img src="images/phòng 3.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Ana Mandara Villas</h3>
+                  <p>Ana Mandara Villas là một khách sạn được xây dựng theo kiểu dáng Pháp.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">5.000.000/Đêm</span>
+                  <img src="images/phòng 4.webp" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Dalat Edensee</h3>
+                  <p>Là một khách sạn nằm kế bên Hồ Tuyền Lâm.
+                     Cách Hồ Tuyền Lâm 1km có thể đi bộ sang.
+                  </p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">6.000.000/Đêm</span>
+                  <img src="images/phòng 5.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Swiss Belresort</h3>
+                  <p>Swiss Belresort nằm giữa không gian yên tĩnh, với những đồi thông trải dài.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">2.500.000/Đêm</span>
+                  <img src="images/PHÒNG 9.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Hotel Colline Đà Lạt </h3>
+                  <p>Đây là một khách sạn 5 sao nằm ngay chợ cho những ai thích ở trung tâm thành phố.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">4.000.000/Đêm</span>
+                  <img src="images/PHÒNG 10.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Mai Hoang Hotel </h3>
+                  <p>Mai Hoang Hotel tiêu chuẩn 2 sao với 33 phòng mang phong cách Á-Âu sang trọng.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">3.000.000/Đêm</span>
+                  <img src="images/phòng 6.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Tea leaf Hotel </h3>
+                  <p>Với phong cách Á-Âu sang trọng, đem lại cho du khách không gian rộng rãi.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">2.000.000/Đêm</span>
+                  <img src="images/phòng 7.webp" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>La Roza Villa</h3>
+                  <p>Đến với La Roza Villa, quý khách sẽ luôn được đón tiếp một cách nồng hậu và chân tình.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">5.000.000/Đêm</span>
+                  <img src="images/phòng 8.jpg" alt="">
+                  <a href="#" class="fas fa-shopping-cart"></a>
+               </div>
+               <div class="content">
+                  <h3>Canary House Dalat </h3>
+                  <p>Canary House Da Lat Hotel nổi bật với tòa nhà trắng tinh khôi được thiết kế hiện đại.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">ĐẶT NGAY</a>
+               </div>
+            </div>
+
+
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- services -->
+
+   <section class="services">
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/service1.png" alt="">
+            <h3>Hồ Bơi</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service2.png" alt="">
+            <h3>Đồ Ăn & Đồ Uống</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service3.png" alt="">
+            <h3>Nhà Hàng</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service4.png" alt="">
+            <h3>Thể Thao</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service5.png" alt="">
+            <h3>Làm Đẹp</h3>
+         </div>
+
+         <div class="box">
+            <img src="images/service6.png" alt="">
+            <h3>Bãi Biển</h3>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- gallery -->
+
+   <section class="gallery" id="gallery">
+
+      <h1 class="heading">PHÒNG TRƯNG BÀY</h1>
+
+      <div class="swiper gallery-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <img src="images/ĐỒ ĂN 1.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/ĐỒ ĂN 2.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/ĐỒ ĂN 4.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/ĐỒ ĂN 5.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/ĐỒ ĂN 7.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/ĐỒ ĂN 8.webp" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/ĐỒ ĂN 9.jpg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="images/ĐỒ ĂN 10.webp" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+
+
+
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- review -->
+
+   <section class="review" id="review">
+
+      <div class="swiper review-slider">
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">Bình Luận & Đánh Giá</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Tôi rất thích ở không muốn về quá đẹp</p>
+               <div class="user">
+                  <img src="images/rv1.jpg" alt="">
+                  <div class="user-info">
+                     <h3> Minh Phương</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">Bình Luận & Đánh Giá</h2>
+               <i class="fas fa-quote-right"> </i>
+               <p> Khách sạn đẹp phòng rộng rãi.</p>
+               <div class="user">
+                  <img src="images/rv2.jpg" alt="">
+                  <div class="user-info">
+                     <h3>Hữu Kiên</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">Bình Luận & Đánh Giá</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Tuyệt vời tôi sẽ đến lần sau</p>
+               <div class="user">
+                  <img src="images/rv3.jpg" alt="">
+                  <div class="user-info">
+                     <h3>Hoài Nam</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">Bình Luận & Đánh Giá</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Phòng rộng mát mẻ siêu đẹp</p>
+               <div class="user">
+                  <img src="images/rv4.jfif" alt="">
+                  <div class="user-info">
+                     <h3>Thu Hương</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">Bình Luận & Đánh Giá</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>View khách sạn rất sang chảnh sạch sẽ gọn gàng.</p>
+               <div class="user">
+                  <img src="images/rv5.jfif" alt="">
+                  <div class="user-info">
+                     <h3>Kim Anh</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h2 class="heading">Bình Luận & Đánh Giá</h2>
+               <i class="fas fa-quote-right"></i>
+               <p>Khách sạn nhiều chỗ chụp ảnh và phòng rất đẹp.</p>
+               <div class="user">
+                  <img src="images/rv6.jfif" alt="">
+                  <div class="user-info">
+                     <h3>Đinh Đan</h3>
+                     <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- faq -->
+
+   <section class="faqs" id="faq">
+
+      <h1 class="heading">NHỮNG CÂU HỎI CỦA KHÁCH HÀNG</h1>
+
+      <div class="row">
+
+         <div class="image">
+            <img src="images/FAQs.gif" alt="">
+         </div>
+
+         <div class="content">
+
+            <div class="box active">
+               <h3>Tôi không biết chọn khách sạn nào?</h3>
+               <p>Xin chào quý khách!
+                  Đến với DA LAT TRAVEL quý khách sẽ được tư vấn và hỗ trợ tìm khách sạn phù hợp với mình .Hãy liên hệ với chúng tôi.</p>
+            </div>
+
+            <div class="box">
+               <h3>Khách sạn nào đẹp ở Đà Lạt?</h3>
+               <p>Xin chào quý khách!
+                  Đến với DA LAT TRAVEL quý khách sẽ được tư vấn và hỗ trợ liệt kê cho quý khách những khách sạn đẹp. Hãy liên hệ với chúng tôi.
+
+               </p>
+            </div>
+
+            <div class="box">
+               <h3>Tôi muốn chọn khách sạn 1 phòng có 4-5 giường ngủ?</h3>
+               <p>Xin chào quý khách!
+                  Đến với DA LAT TRAVEL quý khách sẽ được tư vấn và hỗ trợ tìm cho quý khách phòng có đủ yêu cầu của mình. Hãy liên hệ với chúng tôi.
+               </p>
+            </div>
+
+            <div class="box">
+               <h3>Khách sạn nào có view hồ?</h3>
+               <p>Xin chào quý khách!
+                  Đến với DA LAT TRAVEL quý khách sẽ được tư vấn và hỗ trợ tìm cho quý khách khách sạn nào gần hồ và có hồ.Hãy liên hệ với chúng tôi</p>
+            </div>
+
+            <div class="box">
+               <h3>Khách sạn nào gần chợ trung tâm?</h3>
+               <p>Xin chào quý khách!
+                  Đến với DA LAT TRAVEL quý khách sẽ được tư vấn và hỗ trợ tìm cho quý khách khách sạn gần chợ. Hãy liên hệ với chúng tôi.</p>
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- reservation -->
+
+   <section class="reservation" id="reservation">
+
+      <h1 class="heading">ĐẶT PHÒNG</h1>
+
+      <form action="">
+
+         <div class="container">
+
+            <div class="box">
+               <p>Họ Tên<span>*</span></p>
+               <input type="text" class="input" placeholder="Tên đầy đủ">
+            </div>
+
+            <div class="box">
+               <p>Email <span>*</span></p>
+               <input type="text" class="input" placeholder="Tên Email">
+            </div>
+
+            <div class="box">
+               <p>Ngày đặt phòng <span>*</span></p>
+               <input type="date" class="input">
+            </div>
+
+            <div class="box">
+               <p>Ngày trả phòng <span>*</span></p>
+               <input type="date" class="input">
+            </div>
+
+            <div class="box">
+               <p>Người lớn <span>*</span></p>
+               <select name="adults" class="input">
+                  <option value="1">1 Người lớn </option>
+                  <option value="2">2 Người lớn </option>
+                  <option value="3">3 Người lớn </option>
+                  <option value="4">4 Người lớn </option>
+                  <option value="5">5 Người lớn </option>
+                  <option value="6">6 Người lớn </option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>Trẻ em<span>*</span></p>
+               <select name="child" class="input">
+                  <option value="1">1 Trẻ em</option>
+                  <option value="2">2 Trẻ em</option>
+                  <option value="3">3 Trẻ em</option>
+                  <option value="4">4 Trẻ em</option>
+                  <option value="5">5 Trẻ em</option>
+                  <option value="6">6 Trẻ em</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>Phòng <span>*</span></p>
+               <select name="rooms" class="input">
+                  <option value="1">1 Phòng</option>
+                  <option value="2">2 Phòng</option>
+                  <option value="3">3 Phòng</option>
+                  <option value="4">4 Phòng</option>
+                  <option value="5">5 Phòng</option>
+                  <option value="6">6 Phòng</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>Loại phòng <span>*</span></p>
+               <select name="type" class="input">
+                  <option value="1">Phòng gia đình</option>
+                  <option value="2">Phòng đôi</option>
+                  <option value="3">Phòng toàn cảnh</option>
+                  <option value="4">Phòng một</option>
+               </select>
+            </div>
+   
+         </div>
+
+         <input type="submit" value="Gửi" class="btn">
+
+      </form>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- footer -->
+
+
+
+<!--footer -->
+<footer id="footer">
+   <div class="inner clearfix">
+     <div class="about-us">
+       <p class="logo"><img src="/Bài code linh tinh/THỰC TẬP (1)/images/logo-blue.svg" alt=""></p>
+       <p>Du lịch Đà Lạt là một điểm đến vô cùng thu hút du khách. Hãy cùng DA LAT TRAVEL tìm hiểu tour du lịch Đà Lạt được nhiều khách hàng yêu thích và lựa chọn là điểm đến lý tưởng nhé!
+         Đà Lạt nổi tiếng là thành phố mộng mơ với thiên nhiên trong lành và không khí thoáng đãng. 
+         </p>
+       
+     </div>
+
+     <div class="info-link">
+       <h3>Liên kết thông tin</h3>
+       <nav>
+         <ul class="link-list">
+           <li><a href="./">Trang chủ</a></li>
+           <li><a href="./">Tìm kiếm</a></li>
+           <li><a href="./">Đánh giá</a></li>
+           <li><a href="./">Về chúng tôi</a></li>
+           <li><a href="./">Liên hệ</a></li>
+           <li><a href="./">Thắc mắc</a></li>
+         </ul>
+       </nav>
+     </div>
+
+     <div class="contact-detail">
+       <h3>Chi tiết liên hệ</h3>
+       <ul class="link-list">
+         <li><a href="mailto:info@yoursite.com">Dalat travel@gmail.com</a></li>
+         <li><a href="www.yoursite.com">www.Dalat travel.com</a></li>
+         <li><address>Vạn Phúc-Hà Đông-Hà Nội</address></li>
+         <li><a href="tel:+61383766284">0355916414</a></li>
+       </ul>
+     </div>
+
+     <div class="social">
+       <h3>Xã hội</h3>
+       <ul class="link-list">
+         <li><i class="fab fa-facebook-f"></i> 2543 Likes</li>
+         <li><i class="fab fa-github"></i> 128 Projects</li>
+         <li><i class="fab fa-twitter"></i> 1260 Followers</li>
+         <li><i class="fab fa-dribbble"></i> 3312 Shots</li>
+      
+       </ul>
+     </div>
+   </div>
+ </footer>
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <script src="khachsan.js"></script>
+
+</body>
+</html>

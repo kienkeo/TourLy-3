@@ -1,0 +1,427 @@
+*:root {
+    --background-discover: #0077b6;
+    --khoangCach: 500px;
+    --khoangCachHover: 550px;
+}
+
+
+
+body {
+    background: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background: #333; */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0.5rem 9%;
+    font-family:'Nunito', sans-serif;
+    background: #fff;
+  }
+  
+  header .logo {
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+    width: 50%;
+    height: 50%;
+  }
+  
+  /* header .logo span {
+    color: var(--colorBc);
+  } */
+  
+  
+  header .navbar a {
+    color: #333;
+    font-size:1.1rem;
+    margin-right: 20px; 
+    text-decoration: none;
+    padding: 4px;
+  }
+
+  header .navbar a:hover {
+    color: #0077b6;
+  }
+  header .navbar {
+    margin-left: 120px;
+  }
+/* 
+#header .icon a span {
+    color: var(--background-discover);
+    font-size: 30px;
+} */
+
+.img_discover {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.content_discover {
+    position: absolute;
+    text-align: center;
+    right: 40%;
+    top: 45%;
+    left: 40%;
+    z-index: 2;
+
+}
+
+.content_discover h3 {
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.content_discover p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.content_discover h5 {
+    font-size: 30px;
+    color:#48cae4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 140px 0px 0px;
+    background: #0077b6;
+    color: #fff;
+    padding: .7rem 4rem;
+    border: .2rem solid #0077b6;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #48cae4;
+    color: white;
+  }
+
+#china h2,
+#vietnam h2,
+#japan h2,
+#russia h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+}
+
+#vietnam h2,
+#japan h2,
+#russia h2,
+.box-container {
+    margin-top: var(--khoangCach);
+}
+
+#china h2 span,
+#vietnam h2 span,
+#japan h2 span,
+#russia h2 span {
+    color: var(--background-discover);
+}
+
+#china img,
+#china .div_discover,
+#vietnam img,
+#vietnam .div_discover,
+#japan img,
+#japan .div_discover,
+#russia img,
+#russia .div_discover {
+    /* visibility: hidden; */
+    border-radius: 20px;
+    visibility: visible;
+}
+
+#china img:hover,
+#vietnam img:hover,
+#japan img:hover,
+#rusia img:hover {
+
+    cursor: pointer;
+}
+
+#china .div_discover:hover,
+#vietnam .div_discover:hover,
+#japan .div_discover:hover,
+#russia .div_discover:hover {
+    cursor: pointer;
+    background: #48cae4;
+    transition: 0.6s;
+}
+
+.div_discover h3 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.div_discover p {
+    text-align: center;
+    font-size: 30px;
+}
+
+.div_discover .translate-btn {
+    text-align: center;
+}
+
+.div_discover .translate-btn input {
+    display: inline-block;
+    margin: 30px;
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    background: var(--background-discover);
+}
+
+.div_discover .translate-btn input:hover {
+    cursor: pointer;
+    background: #fff;
+    transition: 0.6s;
+}
+
+#china img {
+    /* visibility: hidden; */
+    position: absolute;
+    right: 15%;
+    width: var(--khoangCach);
+    animation: china-img 2s 0.5s ease-in-out 1;
+}
+
+#china .div_discover {
+    position: absolute;
+    left: 10%;
+    animation: china-div 2s 0.5s ease-in-out 1;
+    background-color: #0077b6;
+}
+
+/* vietnam */
+#vietnam img {
+    position: absolute;
+    left: 15%;
+    width: var(--khoangCach);
+    animation: vietnam-img 2s 0.5s ease-in-out 1;
+
+}
+
+#vietnam .div_discover {
+    position: absolute;
+    right: 10%;
+    animation: vietnam-div 2s 0.5s ease-in-out 1;
+    background-color: #0077b6;
+}
+
+/* japan */
+#japan img {
+    position: absolute;
+    right: 15%;
+    width: var(--khoangCach);
+    animation: japan-img 2s 0.5s ease-in-out 1;
+}
+
+#japan .div_discover {
+    position: absolute;
+    left: 10%;
+    animation: japan-div 2s 0.5s ease-in-out 1;
+    background-color: #0077b6;
+}
+
+/* russia */
+#russia img {
+    position: absolute;
+    left: 15%;
+    width: var(--khoangCach);
+    animation: russia-img 2s 0.5s ease-in-out 1;
+}
+
+#russia .div_discover {
+    position: absolute;
+    right: 10%;
+    animation: russia-div 2s 0.5s ease-in-out 1;
+    background-color: #0077b6;
+}
+
+@keyframes china-img {
+    to {
+        /* width: var(--khoangCachHover); */
+        /* left: ; */
+        visibility: visible;
+    }
+}
+
+.div_discover {
+    display: block;
+    width: var(--khoangCach);
+    height: var(--khoangCach);
+    background: #fff;
+    position: relative;
+}
+
+.header-black {
+    background-color: #333;
+    height: 80px;
+}
+
+.content_discover button a {
+    color: #fff;
+}
+
+#box_about_us {
+    margin-left: 5%;
+}
+
+.footer {
+    display: contents;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    background-color: #333;
+    width: 1000px;
+}
+
+
+
+/* media queries  */
+
+@media (max-width:1200px) {
+
+    html {
+        font-size: 55%;
+        position: relative;
+    }
+
+    #china img,
+    #japan img,
+    #vietnam .div_discover,
+    #russia .div_discover {
+        position: absolute;
+        right: 5%;
+    }
+
+    #vietnam img,
+    #russia img,
+    #china .div_discover,
+    #japan .div_discover {
+        position: absolute;
+        left: 5%;
+    }
+
+    .content_discover {
+        position: absolute;
+        top: 140px;
+        left: 45%;
+    }
+}
+
+@media (max-width:991px) {
+
+    header {
+        padding: 2rem;
+    }
+
+    html {
+        position: relative;
+        font-size: 55%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    #china img,
+    #japan img,
+    #vietnam .div_discover,
+    #russia .div_discover {
+        position: absolute;
+        right: 3%;
+        width: 300px;
+    }
+
+    .div_discover h3 {
+        font-size: 30px;
+    }
+
+    .div_discover p {
+        font-size: 26px;
+    }
+
+    .box {
+        width: 50px;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    #menu-bar {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255, 255, 255, .2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        border-radius: .5rem;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #222;
+    }
+
+    #vietnam img,
+    #russia img,
+    #china .div_discover,
+    #japan .div_discover {
+        position: absolute;
+        right: 3%;
+        width: 350px;
+    }
+
+    .div_discover h3 {
+        font-size: 25px;
+    }
+
+    .div_discover p {
+        font-size: 23px;
+    }
+
+    #box_follow {
+        margin-left: 40px;
+    }
+
+    #box_q {
+        margin-left: 40px;
+    }
+
+}
